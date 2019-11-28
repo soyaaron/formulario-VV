@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Formulario de registro</h1>
+        <form action="*" method="post" class="form-registro">
+            <h2 class="form__titulo">Iniciar proceso de admisión</h2>
+            <div class="contenedor-inputs">
+                <input type="text" name="primerNombre" placeholder="Primer nombre" required>
+                <input type="text" name="segundoNombre" placeholder="Segundo Nombre"> 
+                <input type="text" name="primerApellido" placeholder="Primer Apellido" required> 
+                <input type="text" name="segundoApellido" placeholder="Segundo Apellido">
+                <input type="date" name="fechaNacimiento" placeholder="Fecha de nacimiento" required>
+                <input type="text" name="lugarNacimiento" placeholder="Lugar de nacimiento" required>
+                <select name="genero" required class="input-48"> 
+                    <option value>Género</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                </select>
+                <select name="estadoCivil" class="input-48">
+                    <option value="">Estado Civil</option>
+                    <option value="soltero">Soltero(a)</option>
+                    <option value="casado">Casado(a)</option>
+                    <option value="divorciado">Divorciado(a)</option>
+                    <option value="viudo">Viudo(a)</option>
+                    <option value="unionLibre">Union Libre</option>
+                    <option value="otro">Otro</option>
+                </select>
+                <input type="email" name="emailPrimario" placeholder="Correo primario" required class="input-48">
+                <input type="email" name="emailSecundario" placeholder="Correo secundario" class="input-48">
+                <select name="identificacion" required class="input-48">
+                    <option value="">Tipo de Identificación</option>
+                    <option value="cedula">Cédula</option>
+                    <option value="pasaporte">pasaporte</option>
+                    <option value="extranjeros">No. de Residencia</option>
+                </select>
+                <input type="text" name="numIdentificacion" placeholder="000-0000000-0" required class="input-48">
+                <select name="paisOrigen" required class="input-48">
+                    <option value="pais">Pais de Origen</option>
+                    <option value="ANT">ANTIGUA Y BARBUDA </option>
+                    <option value="ARG">ARGENTINA</option>
+                    <option value="ARU">ARUBA</option>
+                    <option value="AUS">AUSTRIA</option>
+                    <option value="BEL">BELICE</option>
+                    <option value="BOL">BOLIVIA</option>
+                    <option value="BRA">BRASIL</option>
+                    <option value="BUL">BULGARIA</option>
+                    <option value="CAN">CANADA</option>
+                    <option value="CHI">CHILE</option>
+                    <option value="CHN">CHINA</option>
+                    <option value="COL">COLOMBIA</option>
+                    <option value="COR">COREA</option>
+                    <option value="COS">COSTA RICA</option>
+                    <option value="CUB">CUBA</option>
+                    <option value="ECU">ECUADOR</option>
+                    <option value="SAL">EL SALVADOR</option>
+                    <option value="ESP">ESPAÑA</option>
+                    <option value="USA">ESTADOS UNIDOS DE AMERICA</option>
+                    <option value="FIN">FINLANDIA</option>
+                    <option value="FRA">FRANCIA</option>
+                    <option value="GUA">GUATEMALA</option>
+                    <option value="HAI">HAITI</option>
+                    <option value="HOL"> HOLANDA </option>
+                    <option value="HON">HONDURAS</option>
+                    <option value="ITA">ITALIA</option>
+                    <option value="JAM">JAMAICA</option>
+                    <option value="JAP">JAPON</option>
+                    <option value="LIB">LIBANO</option>
+                    <option value="MEX">MEXICO</option>
+                    <option value="NIC">NICARAGUA</option>
+                    <option value="PAK">PAKISTAN</option>
+                    <option value="PAN">PANAMA</option>
+                    <option value="PAR">PARAGUAY</option>
+                    <option value="PER">PERU</option>
+                    <option value="PR">PUERTO RICO</option>
+                    <option value="ALB">REPUBLICA DE ALBANIA</option>
+                    <option value="DOM">REPUBLICA DOMINICANA</option>
+                    <option value="RUM">RUMANIA</option>
+                    <option value="RUS">RUSIA</option>
+                    <option value="SIR">SIRIA</option>
+                    <option value="SUI">SUIZA</option>
+                    <option value="TAI">TAIWAN</option>
+                    <option value="TUR">TURQUIA</option>
+                    <option value="UCR">UCRANIA</option>
+                    <option value="URU">URUGUAY</option>
+                    <option value="VEN">VENEZUELA</option>
+                    <option value="YUG">YUGOSLAVA</option>
+                </select>
+                <select name="provincia" required class="input-48">
+                    <option value="provincia">Provincia</option>
+                    <option value="P_02">Azua</option>
+                    <option value="P_03">Baoruco</option>
+                    <option value="P_04">Barahona</option>
+                    <option value="P_05">Dajabón</option>
+                    <option value="P_01">Distrito Nacional</option>
+                    <option value="P_06">Duarte</option>
+                    <option value="P_08">El Seibo</option>
+                    <option value="P_07">Elías Piña</option>
+                    <option value="P_09">Espaillat</option>
+                    <option value="P_30">Hato Mayor</option>
+                    <option value="P_19">Hermanas Mirabal</option>
+                    <option value="P_10">Independencia</option>
+                    <option value="P_11">La Altagracia</option>
+                    <option value="P_12">La Romana</option>
+                    <option value="P_13">La Vega</option>
+                    <option value="P_14">María Trinidad Sánchez</option>
+                    <option value="P_28">Monseñor Nouel</option>
+                    <option value="P_15">Monte Cristi</option>
+                    <option value="P_29">Monte Plata</option>
+                    <option value="P_16">Pedernales</option>
+                    <option value="P_17">Peravia</option>
+                    <option value="P_18">Puerto Plata</option>
+                    <option value="P_20">Samaná</option>
+                    <option value="P_21">San Cristóbal</option>
+                    <option value="P_31">San José de Ocoa</option>
+                    <option value="P_22">San Juan</option>
+                    <option value="P_23">San Pedro de Macorís</option>
+                    <option value="P_24">Sanchez Ramírez</option>
+                    <option value="P_25">Santiago</option>
+                    <option value="P_26">Santiago Rodríguez</option>
+                    <option value="P_32">Santo Domingo</option>
+                    <option value="P_27">Valverde</option>
+                </select name="municipio" required>
+                <select class="input-48">
+                    <option value="01">1</option>
+                    <option value="02">2</option>
+                    <option value="03">3</option>
+                    <option value="04">4</option>
+                    <option value="05">5</option>
+                    <option value="06">6</option>
+                </select>
+                <input type="text" name="direccion" placeholder="Calle/Avenida Sector/Barrio" required class="input-48">
+                <input type="text" name="residencial" placeholder="Residencial" class="input-48">
+                <input type="text" name="casa" placeholder="Num Casa/Edifico" required class="input-48">
+                <input type="text" name="celular" placeholder="Celular Ej: 8095556677"  class="input-100">
+                <input type="text" name="telPrimario" placeholder="Tel primario Ej: 8095556677" required class="input-100">
+                <input type="text" name="telSecundario" placeholder="Tel secundario Ej: 8095556677" class="input-100">
+                <input type="password" name="contraseña" placeholder="Contraseña" required class="input-48">
+                <input type="password" name="contraseñaConf" placeholder="Confirmar contraseña" required class="input-48">
+                <input type="submit" value="Registrar" class="btn-enviar">
+            </div>
+        </form>
+        <script src="script.js"></script>
+    </body>
+</html>
