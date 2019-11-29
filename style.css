@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #01137adc;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+}
+
+.form-registro {
+  width: 95%;
+  max-width: 500px;
+  margin: auto;
+  background: #fff;
+  border-radius: 7px;
+}
+
+.form__titulo {
+  background: rgb(0, 191, 255);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-weight: 100;
+  font-size: 30px;
+  border-radius: 7px 7px 0 0;
+  border-bottom: 5px solid crimson;
+}
+
+.contenedor-inputs {
+  padding: 20px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+input,
+select {
+  margin-bottom: 15px;
+  padding: 15px;
+  font-size: 13px;
+  border-radius: 3px;
+  border: 1px solid darkgray;
+}
+
+.input-48 {
+  width: 48%;
+}
+
+.input-100 {
+  width: 100%;
+}
+
+.btn-enviar {
+  background: rgb(93, 153, 88);
+  color: #fff;
+  margin: auto;
+  padding: 10px 40px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-enviar:active {
+  transform: scale(1.05);
+}
+<<<<<<< HEAD
+
+#FechaNacimiento {
+  display: block;
+}
+
+label {
+  font-size: 13px;
+}
+=======
+>>>>>>> 6a62191e8f92d5121760e7bc95e3180a9bf3a992
