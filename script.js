@@ -7,7 +7,7 @@ function validacionFormulario() {
     primerNombre.length == 0 ||
     /^\s+$/.test(primerNombre)
   ) {
-    alert("El campo Primer nombre es obligatorio");
+    alert("Primer nombre inválido");
     return false;
   }
   primerApellido = document.getElementById("PrimerApellido").value;
@@ -16,7 +16,7 @@ function validacionFormulario() {
     primerApellido.length == 0 ||
     /^\s+$/.test(primerApellido)
   ) {
-    alert("El campo Primer apellido es obligatorio");
+    alert("Primer apellido inválido");
     return false;
   }
   fechaNacimiento = document.getElementById("FechaNacimiento").value;
@@ -25,7 +25,7 @@ function validacionFormulario() {
     fechaNacimiento.length == 0 ||
     /^\s+$/.test(fechaNacimiento)
   ) {
-    alert("El campo Fecha de nacimiento es obligatorio");
+    alert("Fecha de nacimiento inválido");
     return false;
   }
   lugarNacimiento = document.getElementById("LugarNacimiento").value;
@@ -34,17 +34,26 @@ function validacionFormulario() {
     lugarNacimiento.length == 0 ||
     /^\s+$/.test(lugarNacimiento)
   ) {
-    alert("El campo Lugar de nacimiento es obligatorio");
+    alert("Lugar de nacimiento inválido");
+    return false;
+  }
+  numIdentificacion = document.getElementById("NumIdentificacion").value;
+  if (
+    numIdentificacion == null ||
+    numIdentificacion.length == 0 ||
+    /^\s+$/.test(numIdentificacion)
+  ) {
+    alert("Número de identificación inválido");
     return false;
   }
   direccion = document.getElementById("Direccion").value;
   if (direccion == null || direccion.length == 0 || /^\s+$/.test(direccion)) {
-    alert("El campo Dirección es obligatorio");
+    alert("Dirección inválida");
     return false;
   }
   casa = document.getElementById("Casa").value;
   if (casa == null || casa.length == 0 || /^\s+$/.test(casa)) {
-    alert("El campo Casa es obligatorio");
+    alert("Casa inválida");
     return false;
   }
   telPrimario = document.getElementById("TelPrimario").value;
@@ -54,7 +63,7 @@ function validacionFormulario() {
     /^\s+$/.test(telPrimario)
   ) {
     2 / 3;
-    alert("El campo Telefono primario es obligatorio");
+    alert("Telefono primario inválido");
     return false;
   }
   contraseña = document.getElementById("Contraseña").value;
@@ -63,50 +72,46 @@ function validacionFormulario() {
     contraseña.length == 0 ||
     /^\s+$/.test(contraseña)
   ) {
-    alert("El campo Contraseña es obligatorio");
+    alert("Contraseña inválida");
     return false;
   }
   // validaciones de las listas
   genero = document.getElementById("Genero").selectedIndex;
   if (genero == null || genero == 0) {
-    alert("El campo Género es obligatorio");
+    alert("Género inválida");
     return false;
   }
   estadoCivil = document.getElementById("EstadoCivil").selectedIndex;
   if (estadoCivil == null || estadoCivil == 0) {
-    alert("El campo Estado Civil es obligatorio");
+    alert("Estado Civil inválido");
     return false;
   }
   identificacion = document.getElementById("Identificacion").selectedIndex;
   if (identificacion == null || identificacion == 0) {
-    alert("El campo Identificación es obligatorio");
+    alert("Identificación inválida");
     return false;
   }
   paisOrigen = document.getElementById("PaisOrigen").selectedIndex;
   if (paisOrigen == null || paisOrigen == 0) {
-    alert("El campo País de origen es obligatorio");
+    alert("País de origen inválido");
     return false;
   }
   provincia = document.getElementById("Provincia").selectedIndex;
   if (provincia == null || provincia == 0) {
-    alert("El campo Provincia es obligatorio");
+    alert("Provincia inválida");
+    return false;
+  }
+  municipio = document.getElementById("Municipio").selectedIndex;
+  if (municipio == null || municipio == 0) {
+    alert("Muninicipio inválido");
     return false;
   }
   // validacion de los campos input tipo "correo"
   emailPrimario = document.getElementById("EmailPrimario").value;
   if (!/\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)/.test(emailPrimario)) {
-    alert("El campo Correo primario es obligatorio");
+    alert("Correo primario inválido");
     return false;
   }
   contraseña = document.getElementById("Contraseña").value;
   contraseñaConf = document.getElementById("ContraseñaConf").value;
-
-  if (contraseña == contraseñaConf)
-    alert(
-      "Las dos claves son iguales...\nRealizaríamos las acciones del caso positivo"
-    );
-  else
-    alert(
-      "Las dos claves son distintas...\nRealizaríamos las acciones del caso negativo"
-    );
 }

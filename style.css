@@ -68,7 +68,8 @@ select {
 .btn-enviar:active {
   transform: scale(1.05);
 }
-#FechaNacimiento {
+#FechaNacimiento,
+#NumIdentificacion {
   display: block;
 }
 

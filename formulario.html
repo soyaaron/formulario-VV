@@ -44,7 +44,7 @@
                     <option value="pasaporte">pasaporte</option>
                     <option value="extranjeros">No. de Residencia</option>
                 </select>
-                <input id="NumIdentificacion" type="text" name="numIdentificacion" placeholder="000-0000000-0" class="input-48" required>
+                
                 <select id="PaisOrigen" name="paisOrigen" required class="input-48">
                     <option value="pais" selected="true" disabled="disabled">Pais de Origen</option>
                     <option value="ANT">ANTIGUA Y BARBUDA </option>
@@ -96,6 +96,10 @@
                     <option value="VEN">VENEZUELA</option>
                     <option value="YUG">YUGOSLAVA</option>
                 </select>
+                <div style="float:left">
+                    <label for="NumIdentificacion">Número de Identificación</label>
+                    <input id="NumIdentificacion" type="text" name="numIdentificacion" placeholder="000-0000000-0" required>
+                </div>
                 <select id="Provincia" name="provincia" class="input-48" required >
                     <option value="provincia" selected="true" disabled="disabled">Provincia</option>
                     <option value="P_02">Azua</option>
