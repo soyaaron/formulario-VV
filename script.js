@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 1 / 3;
 // validacion de los campos input "text" obligatorios
 function validacionFormulario() {
@@ -114,6 +115,8 @@ function validacionFormulario() {
     );
 }
 =======
+=======
+>>>>>>> 6a62191e8f92d5121760e7bc95e3180a9bf3a992
 // validacion de los campos input "text" obligatorios 
 
 function validacionFormulario() { 
@@ -249,5 +252,9 @@ function validacionFormulario() {
     
     alert("Las dos claves son distintas...\nRealizaríamos las acciones del caso negativo") 
     
+<<<<<<< HEAD
+    } 
+>>>>>>> 6a62191e8f92d5121760e7bc95e3180a9bf3a992
+=======
     } 
 >>>>>>> 6a62191e8f92d5121760e7bc95e3180a9bf3a992

@@ -9,6 +9,7 @@
     </head>
     <body>
         <h1>Formulario de registro</h1>
+<<<<<<< HEAD
         <form action="*" method="post" class="form-registro" onsubmit="return validacionFormulario();">
             <h2 class="form__titulo">Iniciar proceso de admisión</h2>
             <div class="contenedor-inputs">
@@ -29,6 +30,24 @@
                 </select>
                 <select id="EstadoCivil" name="estadoCivil" class="input-48">
                     <option value="" selected="true" disabled="disabled">Estado Civil</option>
+=======
+        <form action="*" method="post" class="form-registro">
+            <h2 class="form__titulo">Iniciar proceso de admisión</h2>
+            <div class="contenedor-inputs">
+                <input type="text" name="primerNombre" placeholder="Primer nombre" required>
+                <input type="text" name="segundoNombre" placeholder="Segundo Nombre"> 
+                <input type="text" name="primerApellido" placeholder="Primer Apellido" required> 
+                <input type="text" name="segundoApellido" placeholder="Segundo Apellido">
+                <input type="date" name="fechaNacimiento" placeholder="Fecha de nacimiento" required>
+                <input type="text" name="lugarNacimiento" placeholder="Lugar de nacimiento" required>
+                <select name="genero" required class="input-48"> 
+                    <option value>Género</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                </select>
+                <select name="estadoCivil" class="input-48">
+                    <option value="">Estado Civil</option>
+>>>>>>> 6a62191e8f92d5121760e7bc95e3180a9bf3a992
                     <option value="soltero">Soltero(a)</option>
                     <option value="casado">Casado(a)</option>
                     <option value="divorciado">Divorciado(a)</option>
@@ -36,17 +55,30 @@
                     <option value="unionLibre">Union Libre</option>
                     <option value="otro">Otro</option>
                 </select>
+<<<<<<< HEAD
                 <input id="EmailPrimario" type="email" name="emailPrimario" placeholder="Correo primario" class="input-48" required>
                 <input id="EmailSecundario" type="email" name="emailSecundario" placeholder="Correo secundario" class="input-48">
                 <select id="Identificacion" name="identificacion" required class="input-48">
                     <option value="" selected="true" disabled="disabled">Tipo de Identificación</option>
+=======
+                <input type="email" name="emailPrimario" placeholder="Correo primario" required class="input-48">
+                <input type="email" name="emailSecundario" placeholder="Correo secundario" class="input-48">
+                <select name="identificacion" required class="input-48">
+                    <option value="">Tipo de Identificación</option>
+>>>>>>> 6a62191e8f92d5121760e7bc95e3180a9bf3a992
                     <option value="cedula">Cédula</option>
                     <option value="pasaporte">pasaporte</option>
                     <option value="extranjeros">No. de Residencia</option>
                 </select>
+<<<<<<< HEAD
                 <input id="NumIdentificacion" type="text" name="numIdentificacion" placeholder="000-0000000-0" class="input-48" required>
                 <select id="PaisOrigen" name="paisOrigen" required class="input-48">
                     <option value="pais" selected="true" disabled="disabled">Pais de Origen</option>
+=======
+                <input type="text" name="numIdentificacion" placeholder="000-0000000-0" required class="input-48">
+                <select name="paisOrigen" required class="input-48">
+                    <option value="pais">Pais de Origen</option>
+>>>>>>> 6a62191e8f92d5121760e7bc95e3180a9bf3a992
                     <option value="ANT">ANTIGUA Y BARBUDA </option>
                     <option value="ARG">ARGENTINA</option>
                     <option value="ARU">ARUBA</option>
@@ -96,8 +128,13 @@
                     <option value="VEN">VENEZUELA</option>
                     <option value="YUG">YUGOSLAVA</option>
                 </select>
+<<<<<<< HEAD
                 <select id="Provincia" name="provincia" class="input-48" required >
                     <option value="provincia" selected="true" disabled="disabled">Provincia</option>
+=======
+                <select name="provincia" required class="input-48">
+                    <option value="provincia">Provincia</option>
+>>>>>>> 6a62191e8f92d5121760e7bc95e3180a9bf3a992
                     <option value="P_02">Azua</option>
                     <option value="P_03">Baoruco</option>
                     <option value="P_04">Barahona</option>
@@ -130,9 +167,14 @@
                     <option value="P_26">Santiago Rodríguez</option>
                     <option value="P_32">Santo Domingo</option>
                     <option value="P_27">Valverde</option>
+<<<<<<< HEAD
                 </select>
                 <select id="Municipio" class="input-48" name="municipio" required>
                     <option value="00" selected="true" disabled="disabled">Municipio</option>
+=======
+                </select name="municipio" required>
+                <select class="input-48">
+>>>>>>> 6a62191e8f92d5121760e7bc95e3180a9bf3a992
                     <option value="01">1</option>
                     <option value="02">2</option>
                     <option value="03">3</option>
@@ -140,6 +182,7 @@
                     <option value="05">5</option>
                     <option value="06">6</option>
                 </select>
+<<<<<<< HEAD
                 <input id="Direccion" type="text" name="direccion" placeholder="Calle/Avenida Sector/Barrio" class="input-48" required >
                 <input id="Residencial" type="text" name="residencial" placeholder="Residencial" class="input-48">
                 <input id="Casa" type="text" name="casa" placeholder="Num Casa/Edifico" class="input-48" required>
@@ -149,6 +192,17 @@
                 <input id="Contraseña" type="password" name="contraseña" placeholder="Contraseña" class="input-48" required>
                 <input id="ContraseñaConf" type="password" name="contraseñaConf" placeholder="Confirmar contraseña" class="input-48" required>
                 <input id="" type="submit" value="Registrar" class="btn-enviar">
+=======
+                <input type="text" name="direccion" placeholder="Calle/Avenida Sector/Barrio" required class="input-48">
+                <input type="text" name="residencial" placeholder="Residencial" class="input-48">
+                <input type="text" name="casa" placeholder="Num Casa/Edifico" required class="input-48">
+                <input type="text" name="celular" placeholder="Celular Ej: 8095556677"  class="input-100">
+                <input type="text" name="telPrimario" placeholder="Tel primario Ej: 8095556677" required class="input-100">
+                <input type="text" name="telSecundario" placeholder="Tel secundario Ej: 8095556677" class="input-100">
+                <input type="password" name="contraseña" placeholder="Contraseña" required class="input-48">
+                <input type="password" name="contraseñaConf" placeholder="Confirmar contraseña" required class="input-48">
+                <input type="submit" value="Registrar" class="btn-enviar">
+>>>>>>> 6a62191e8f92d5121760e7bc95e3180a9bf3a992
             </div>
         </form>
         <script src="script.js"></script>
