@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 * {
   box-sizing: border-box;
 }
@@ -69,12 +68,3 @@ select {
 .btn-enviar:active {
   transform: scale(1.05);
 }
-=======
-
-
-.txt-box{
-    border: solid blue;
-    border-radius: 12px;
-    height: 20px; 
-}
->>>>>>> 72a739beb022542142e7b77293847b4514b16297
