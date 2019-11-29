@@ -13,6 +13,8 @@
         
         <form action="*" method="post" class="form-registro" onsubmit="return validacionFormulario();">
             <h2 class="form__titulo">Iniciar proceso de admisión</h2>
+            <h4>Datos Personales</h4>
+            <hr>
             <div class="contenedor-inputs">
                 <input id="PrimerNombre" type="text" name="primerNombre" placeholder="Primer nombre" class="input-48" required>
                 <input id="SegundoNombre" type="text" name="segundoNombre" placeholder="Segundo Nombre" class="input-48"> 
@@ -28,6 +30,7 @@
                     <option value selected="true" disabled="disabled">Género</option>
                     <option value="Masculino">Masculino</option>
                     <option value="femenino">Femenino</option>
+                    <option value="otros">Otros</option>
                 </select>
                 <select id="EstadoCivil" name="estadoCivil" class="input-48">
                     <option value="" selected="true" disabled="disabled">Estado Civil</option>
@@ -37,16 +40,17 @@
                     <option value="viudo">Viudo(a)</option>
                     <option value="unionLibre">Union Libre</option>
                     <option value="otro">Otro</option>
-                </select>
-                <input id="EmailPrimario" type="email" name="emailPrimario" placeholder="Correo primario" class="input-48" required>
-                <input id="EmailSecundario" type="email" name="emailSecundario" placeholder="Correo secundario" class="input-48">
+                </select>                
                 <select id="Identificacion" name="identificacion" required class="input-48">
                     <option value="" selected="true" disabled="disabled">Tipo de Identificación</option>
                     <option value="cedula">Cédula</option>
                     <option value="pasaporte">pasaporte</option>
                     <option value="extranjeros">No. de Residencia</option>
                 </select>
-                
+                 <div style="float:left">
+                    <label for="NumIdentificacion">Número de Identificación</label>
+                    <input id="NumIdentificacion" type="text" name="numIdentificacion" placeholder="000-0000000-0" required>
+                </div>
                 <select id="PaisOrigen" name="paisOrigen" required class="input-48">
                     <option value="pais" selected="true" disabled="disabled">Pais de Origen</option>
                     <option value="ANT">ANTIGUA Y BARBUDA </option>
@@ -97,11 +101,7 @@
                     <option value="URU">URUGUAY</option>
                     <option value="VEN">VENEZUELA</option>
                     <option value="YUG">YUGOSLAVA</option>
-                </select>
-                <div style="float:left">
-                    <label for="NumIdentificacion">Número de Identificación</label>
-                    <input id="NumIdentificacion" type="text" name="numIdentificacion" placeholder="000-0000000-0" required>
-                </div>
+                </select>               
                 <select id="Provincia" name="provincia" class="input-48" required >
                     <option value="provincia" selected="true" disabled="disabled">Provincia</option>
                     <option value="P_02">Azua</option>
@@ -149,9 +149,12 @@
                 <input id="Direccion" type="text" name="direccion" placeholder="Calle/Avenida Sector/Barrio" class="input-48" required >
                 <input id="Residencial" type="text" name="residencial" placeholder="Residencial" class="input-48">
                 <input id="Casa" type="text" name="casa" placeholder="Num Casa/Edifico" class="input-48" required>
+                <hr>
+                <input id="EmailPrimario" type="email" name="emailPrimario" placeholder="Correo primario" class="input-48" required>
+                <input id="EmailSecundario" type="email" name="emailSecundario" placeholder="Correo secundario" class="input-48">
                 <input id="Celular" type="text" name="celular" placeholder="Celular Ej: 8095556677"  class="input-100">
                 <input id="TelPrimario" type="text" name="telPrimario" placeholder="Tel primario Ej: 8095556677" class="input-100" required>
-                <input id="TelSecundario" type="text" name="telSecundario" placeholder="Tel secundario Ej: 8095556677" class="input-100">
+                <input id="TelSecundario" type="text" name="telSecundario" placeholder="Tel secundario Ej: 8095556677" class="input-100">                
                 <input id="Contraseña" type="password" name="contraseña" placeholder="Contraseña" class="input-48" required>
                 <input id="ContraseñaConf" type="password" name="contraseñaConf" placeholder="Confirmar contraseña" class="input-48" required>
                 <input id="" type="submit" value="Registrar" class="btn-enviar">
