@@ -78,7 +78,7 @@ function validacionFormulario() {
   // validaciones de las listas
   genero = document.getElementById("Genero").selectedIndex;
   if (genero == null || genero == 0) {
-    alert("Género inválida");
+    alert("Género inválido");
     return false;
   }
   estadoCivil = document.getElementById("EstadoCivil").selectedIndex;
@@ -108,7 +108,7 @@ function validacionFormulario() {
   }
   // validacion de los campos input tipo "correo"
   emailPrimario = document.getElementById("EmailPrimario").value;
-  if (!/\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)/.test(emailPrimario)) {
+  if (!/^[^@]+@[^@]+\.[a-zA-Z]{2,}$/.test(emailPrimario)) {
     alert("Correo primario inválido");
     return false;
   }
